@@ -8,10 +8,12 @@ import com.example.notesapp.feature_note.domain.repository.NoteRepositoryImpl
 import com.example.notesapp.feature_note.domain.use_case.*
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
-@Singleton()
+@InstallIn(SingletonComponent::class)
 object AppModule {
 
     @Provides
